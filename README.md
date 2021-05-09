@@ -1,4 +1,4 @@
-# Developer_Intern_Challenge
+# Shopify Developer_Intern_Challenge
 This repository is for the Shopify Fall 2021 Developer Intern Challenge!
 
 <p>A store owner has the ability to sell their paintings to customers but only if they have the required stock. 
