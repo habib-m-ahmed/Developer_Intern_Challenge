@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Image Repository</title>
+    </head>
+    
+    <body>
+        <a href="/">Home</a> <br>
+
+        <p>The current buy/wholesale price is ${{buy}}.</p>
+        <p>The current sell price is ${{sell}}.</p>
+        <p>The current Stock is {{amount}}.</p> <br>
+
+        <FORM method="POST">
+        <P>
+            <LABEL for="buy_price">Enter the new wholesale (buy) price</LABEL>
+            <INPUT type="text" name="buy_price"><BR>
+            <LABEL for="sell_price">Enter the new selling price</LABEL>
+            <INPUT type="text" name="sell_price"><BR>
+            <LABEL for="amount">Enter the new Stock</LABEL>
+            <INPUT type="text" name="amount"><BR>
+            <INPUT type="submit" value="Send"> <INPUT type="reset">
+        </P>
+        </FORM>
+
+    </body>
+</html>

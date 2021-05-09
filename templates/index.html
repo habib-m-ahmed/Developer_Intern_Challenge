@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Image Repository</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    </head>
+
+    <body>
+        <a href="/">Home</a> <br>
+        <a href="/clear">Reset (Dev Option)</a><br>
+        <a href="/money">Get Money (Dev Option)</a><br>
+        <a href="/add">Add an Item</a><br>
+
+        <p>You have sold {{sold}} of goods!</p>
+        <p>You have bought {{bought}} of goods!</p>
+        <p>You have {{cost}} left!</p> <br>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Buy Price</th>
+                    <th>Sell Price</th>
+                    <th>Stock</th>
+                    <th>Image</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            
+            {% for item in items %}
+                <tr>
+                    <td>{{item["name"]}}</td>
+                    <td>{{item["buy_price"]}}</td>
+                    <td>{{item["sell_price"]}}</td>
+                    <td>{{item["amt"]}}</td>
+                    <td><img src='{{item["src"]}}' /></td>
+                    <td><a href='/buy/{{item["id"]}}'>BUY</a></td>
+                    <td><a href='/sell/{{item["id"]}}'>SELL</a></td>
+                    <td><a href='/edit/{{item["id"]}}'>EDIT</a></td>
+                    <td><a href='/remove/{{item["id"]}}'>REMOVE</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

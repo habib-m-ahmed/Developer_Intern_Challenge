@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ec3d3d95-a4a4-4de1-9188-9622001e032e" name="digs">
+        <fileTransfer rootFolder="" accessType="SFTP" host="digs" port="22" sshConfigId="6100aee6-c041-4c70-ba22-44b63fd9b902" sshConfig="guptan4@digs:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
